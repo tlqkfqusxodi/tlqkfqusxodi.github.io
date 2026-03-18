@@ -1,0 +1,601 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0024)https://www.4chan.org/?/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="imageboard,image board,forum,bbs,anonymous,chan,anime,manga,ecchi,hentai,video games,english,japan">
+<meta name="description" content="4chan is a simple image-based bulletin board where anyone can post comments and share images anonymously.">
+<title>4chan</title><link rel="canonical" href="https://4chan.org/">
+<link rel="stylesheet" type="text/css" href="./css/frontpage.12.css">
+
+<!-- <link rel="shortcut icon" href="https://s.4cdn.org/image/favicon.ico">
+<link rel="apple-touch-icon" href="https://s.4cdn.org/image/apple-touch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://s.4cdn.org/image/apple-touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://s.4cdn.org/image/apple-touch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://s.4cdn.org/image/apple-touch-icon-ipad-retina.png"> -->
+<script async="" src="./js/analytics.js"></script><script>var danbo_rating = '__NSFW__', danbo_page = 'homenws';</script>
+<!-- <script src="./4chan_files/4g3qjiodfawd.preload.yotsuba.js" defer=""></script> -->
+<style type="text/css">
+.danbo-slot {
+ width:728px;
+ height:90px;
+ margin:10px auto;
+ overflow:hidden
+}
+@media only screen and (max-width:480px) {
+ .danbo-slot {
+  width:300px;
+  height:250px
+ }
+}
+</style>
+<script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+var tid = /(^|\.)4channel.org$/.test(location.host) ? 'UA-166538-5' : 'UA-166538-1';
+ga('create', tid, {'sampleRate': 1});
+ga('set', 'anonymizeIp', true);
+ga('send','pageview')</script>
+<style>.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #0000ff;
+  --rdp-background-color: #e7edff;
+  --rdp-accent-color-dark: #3003e1;
+  --rdp-background-color-dark: #180270;
+  --rdp-outline: 2px solid var(--rdp-accent-color); /* Outline border for focused elements */
+  --rdp-outline-selected: 2px solid rgba(0, 0, 0, 0.75); /* Outline border for focused _and_ selected elements */
+
+  margin: 1em;
+}
+
+/* Hide elements for devices that are not screen readers */
+.rdp-vhidden {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute !important;
+  top: 0;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  border: 0 !important;
+}
+
+/* Buttons */
+.rdp-button_reset {
+  appearance: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  color: inherit;
+  outline: none;
+  background: none;
+  font: inherit;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.rdp-button {
+  border: 2px solid transparent;
+}
+
+.rdp-button[disabled] {
+  opacity: 0.25;
+}
+
+.rdp-button:not([disabled]) {
+  cursor: pointer;
+}
+
+.rdp-button:focus:not([disabled]),
+.rdp-button:active:not([disabled]) {
+  color: inherit;
+  border: var(--rdp-outline);
+  background-color: var(--rdp-background-color);
+}
+
+.rdp-button:hover:not([disabled]) {
+  background-color: var(--rdp-background-color);
+}
+
+.rdp-months {
+  display: flex;
+}
+
+.rdp-month {
+  margin: 0 1em;
+}
+
+.rdp-month:first-child {
+  margin-left: 0;
+}
+
+.rdp-month:last-child {
+  margin-right: 0;
+}
+
+.rdp-table {
+  margin: 0;
+  max-width: calc(var(--rdp-cell-size) * 7);
+  border-collapse: collapse;
+}
+
+.rdp-with_weeknumber .rdp-table {
+  max-width: calc(var(--rdp-cell-size) * 8);
+  border-collapse: collapse;
+}
+
+.rdp-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  text-align: left;
+}
+
+.rdp-multiple_months .rdp-caption {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.rdp-caption_dropdowns {
+  position: relative;
+  display: inline-flex;
+}
+
+.rdp-caption_label {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 0.25em;
+  white-space: nowrap;
+  color: currentColor;
+  border: 0;
+  border: 2px solid transparent;
+  font-family: inherit;
+  font-size: 140%;
+  font-weight: bold;
+}
+
+.rdp-nav {
+  white-space: nowrap;
+}
+
+.rdp-multiple_months .rdp-caption_start .rdp-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.rdp-multiple_months .rdp-caption_end .rdp-nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.rdp-nav_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--rdp-cell-size);
+  height: var(--rdp-cell-size);
+  padding: 0.25em;
+  border-radius: 100%;
+}
+
+/* ---------- */
+/* Dropdowns  */
+/* ---------- */
+
+.rdp-dropdown_year,
+.rdp-dropdown_month {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.rdp-dropdown {
+  appearance: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: inherit;
+  opacity: 0;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.rdp-dropdown[disabled] {
+  opacity: unset;
+  color: unset;
+}
+
+.rdp-dropdown:focus:not([disabled]) + .rdp-caption_label,
+.rdp-dropdown:active:not([disabled]) + .rdp-caption_label {
+  border: var(--rdp-outline);
+  border-radius: 6px;
+  background-color: var(--rdp-background-color);
+}
+
+.rdp-dropdown_icon {
+  margin: 0 0 0 5px;
+}
+
+.rdp-head {
+  border: 0;
+}
+
+.rdp-head_row,
+.rdp-row {
+  height: 100%;
+}
+
+.rdp-head_cell {
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-align: center;
+  height: 100%;
+  height: var(--rdp-cell-size);
+  padding: 0;
+}
+
+.rdp-tbody {
+  border: 0;
+}
+
+.rdp-tfoot {
+  margin: 0.5em;
+}
+
+.rdp-cell {
+  width: var(--rdp-cell-size);
+  height: 100%;
+  height: var(--rdp-cell-size);
+  padding: 0;
+  text-align: center;
+}
+
+.rdp-weeknumber {
+  font-size: 0.75em;
+}
+
+.rdp-weeknumber,
+.rdp-day {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: var(--rdp-cell-size);
+  max-width: var(--rdp-cell-size);
+  height: var(--rdp-cell-size);
+  margin: 0;
+  border: 2px solid transparent;
+  border-radius: 100%;
+}
+
+.rdp-day_today:not(.rdp-day_outside) {
+  font-weight: bold;
+}
+
+.rdp-day_selected:not([disabled]),
+.rdp-day_selected:focus:not([disabled]),
+.rdp-day_selected:active:not([disabled]),
+.rdp-day_selected:hover:not([disabled]) {
+  color: white;
+  background-color: var(--rdp-accent-color);
+}
+
+.rdp-day_selected:focus:not([disabled]) {
+  border: var(--rdp-outline-selected);
+}
+
+.rdp:not([dir='rtl']) .rdp-day_range_start:not(.rdp-day_range_end) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.rdp:not([dir='rtl']) .rdp-day_range_end:not(.rdp-day_range_start) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.rdp[dir='rtl'] .rdp-day_range_start:not(.rdp-day_range_end) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.rdp[dir='rtl'] .rdp-day_range_end:not(.rdp-day_range_start) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.rdp-day_range_end.rdp-day_range_start {
+  border-radius: 100%;
+}
+
+.rdp-day_range_middle {
+  border-radius: 0;
+}
+</style></head>
+<body>
+<div id="doc">
+  <div id="hd">
+    <div id="logo-fp">
+      <!-- <a href="https://www.4chan.org/" title="Home"> -->
+        <img alt="4chan" src="./images/logo-transparent.png" width="300" height="120">
+      <!-- </a> -->
+    </div>
+  </div>
+<div id="bd">
+  <div class="box-outer" id="announce">
+    <div class="box-inner">
+      <div class="boxbar">
+        <h2>What is NAMIE?</h2>
+                <!-- <a data-cmd="x-wot" href="https://www.4chan.org/?/#" class="closebutton"></a> -->
+              </div>
+      <div class="boxcontent">
+        <div id="wot-cnt"><p>Hello, I am Namie :,3 EN/CN/JP, Chinese-Japanese 16F. Interested in many things, including computers, videogames, music, and Japanese animation. Other names may lead you here ;p Let's be friends and treat each other well, okay?</p><br>A big fan of lolisho, BL/GL, &all manner of perverted things...
+          <br>Currently into SNK, PJSK, Battle Cats, TCOAAL, Tower Dungeon, Garbage Time, Monster, Planetes -> Please introduce me 2 ur favs!!!!</div>      
+      </div>
+    </div>
+  </div>
+<div class="box-outer top-box" id="boards">
+  <div class="box-inner">
+    <div class="boxbar">
+      <h2>Boards</h2>
+      <div id="filter-btn" data-cmd="filter">filter ▼</div>
+    </div>
+    <div class="boxcontent">
+      <div class="column">
+<h3 style="text-decoration: underline; display: inline;">Animation</h3>
+<ul>
+Gintama<br>
+Alien Stage<br>
+Evangelion<br>
+Shota Oni<br>
+Super Lovers<br>
+Revenge<br>
+Lucky Star<br>
+WTTNHK<br>
+God of Highschool<br>
+Dandadan<br>
+The Evil Ring<br>
+Chainsaw Man<br>
+<!-- <li><a href="https://boards.4chan.org/a/" class="boardlink">Anime &amp; Manga</a></li>
+<li><a href="https://boards.4chan.org/c/" class="boardlink">Anime/Cute</a></li>
+<li><a href="https://boards.4chan.org/w/" class="boardlink">Anime/Wallpapers</a></li>
+<li><a href="https://boards.4chan.org/m/" class="boardlink">Mecha</a></li>
+<li><a href="https://boards.4chan.org/cgl/" class="boardlink">Cosplay &amp; EGL</a></li>
+<li><a href="https://boards.4chan.org/cm/" class="boardlink">Cute/Male</a></li>
+<li><a href="https://boards.4chan.org/f/" class="boardlink">Flash</a></li>
+<li><a href="https://boards.4chan.org/n/" class="boardlink">Transportation</a></li>
+<li><a href="https://boards.4chan.org/jp/" class="boardlink">Otaku Culture</a></li>
+<li><a href="https://boards.4chan.org/vt/" class="boardlink">Virtual YouTubers</a></li> -->
+</ul>
+<!-- <h3 style="text-decoration: underline; display: inline;">Video Games</h3> -->
+<ul>
+<!-- <li><a href="https://boards.4chan.org/v/" class="boardlink">Video Games</a></li>
+<li><a href="https://boards.4chan.org/vg/" class="boardlink">Video Game Generals</a></li>
+<li><a href="https://boards.4chan.org/vm/" class="boardlink">Video Games/Multiplayer</a></li>
+<li><a href="https://boards.4chan.org/vmg/" class="boardlink">Video Games/Mobile</a></li>
+<li><a href="https://boards.4chan.org/vp/" class="boardlink">Pokémon</a></li>
+<li><a href="https://boards.4chan.org/vr/" class="boardlink">Retro Games</a></li>
+<li><a href="https://boards.4chan.org/vrpg/" class="boardlink">Video Games/RPG</a></li>
+<li><a href="https://boards.4chan.org/vst/" class="boardlink">Video Games/Strategy</a></li> -->
+</ul>
+</div>
+<div class="column">
+<h3 style="text-decoration: underline; display: inline;">Video Games</h3>
+<ul>
+Escape from Tarkov<br>
+World of Warcraft<br>
+Oxygen Not Included<br>
+Genshin Impact<br>
+CR Ovenbreak<br>
+Blue Archive<br>
+<!-- I have a billion other interests that I'll probably think of... someday... I am always open to new medias!!! I'll read and watch and listen to anything at all!!!! Total love domination!!!!! -->
+<!-- Have 2 put links here...<br>
+someday...<br>
+More medias soon...<br> -->
+<!-- <li><a href="https://boards.4chan.org/co/" class="boardlink">Comics &amp; Cartoons</a></li>
+<li><a href="https://boards.4chan.org/g/" class="boardlink">Technology</a></li>
+<li><a href="https://boards.4chan.org/tv/" class="boardlink">Television &amp; Film</a></li>
+<li><a href="https://boards.4chan.org/k/" class="boardlink">Weapons</a></li>
+<li><a href="https://boards.4chan.org/o/" class="boardlink">Auto</a></li>
+<li><a href="https://boards.4chan.org/an/" class="boardlink">Animals &amp; Nature</a></li>
+<li><a href="https://boards.4chan.org/tg/" class="boardlink">Traditional Games</a></li>
+<li><a href="https://boards.4chan.org/sp/" class="boardlink">Sports</a></li>
+<li><a href="https://boards.4chan.org/xs/" class="boardlink">Extreme Sports</a></li>
+<li><a href="https://boards.4chan.org/pw/" class="boardlink">Professional Wrestling</a></li>
+<li><a href="https://boards.4chan.org/sci/" class="boardlink">Science &amp; Math</a></li>
+<li><a href="https://boards.4chan.org/his/" class="boardlink">History &amp; Humanities</a></li>
+<li><a href="https://boards.4chan.org/int/" class="boardlink">International</a></li>
+<li><a href="https://boards.4chan.org/out/" class="boardlink">Outdoors</a></li>
+<li><a href="https://boards.4chan.org/toy/" class="boardlink">Toys</a></li> -->
+</ul>
+<h3 style="text-decoration: underline; display: inline;">Visual Novels</h3>
+<ul>
+more 2 come...
+</ul>
+</div>
+<div class="column">
+<h3 style="text-decoration: underline; display: inline;">Music</h3>
+<ul>
+THORNAPPLE<br>
+The Volunteers<br>
+Audioslave<br>
+Thrice<br>
+TOOL<br>
+Radiohead<br>
+more 2 come...<br>
+<!-- Choi Jongsu<br>
+Hijikata Toshiro<br>
+Mitani Haru<br>
+Reiner Braun<br>
+Bertolt Hoover<br>
+Annie Leonhart<br> -->
+<!-- <li><a href="https://boards.4chan.org/i/" class="boardlink">Oekaki</a></li>
+<li><a href="https://boards.4chan.org/po/" class="boardlink">Papercraft &amp; Origami</a></li>
+<li><a href="https://boards.4chan.org/p/" class="boardlink">Photography</a></li>
+<li><a href="https://boards.4chan.org/ck/" class="boardlink">Food &amp; Cooking</a></li>
+<li><a href="https://boards.4chan.org/ic/" class="boardlink">Artwork/Critique</a></li>
+<li><a href="https://boards.4chan.org/wg/" class="boardlink">Wallpapers/General</a></li>
+<li><a href="https://boards.4chan.org/lit/" class="boardlink">Literature</a></li>
+<li><a href="https://boards.4chan.org/mu/" class="boardlink">Music</a></li>
+<li><a href="https://boards.4chan.org/fa/" class="boardlink">Fashion</a></li>
+<li><a href="https://boards.4chan.org/3/" class="boardlink">3DCG</a></li>
+<li><a href="https://boards.4chan.org/gd/" class="boardlink">Graphic Design</a></li>
+<li><a href="https://boards.4chan.org/diy/" class="boardlink">Do-It-Yourself</a></li>
+<li><a href="https://boards.4chan.org/wsg/" class="boardlink">Worksafe GIF</a></li>
+<li><a href="https://boards.4chan.org/qst/" class="boardlink">Quests</a></li> -->
+</ul>
+</div>
+<div class="column">
+<h3 style="text-decoration: underline; display: inline;">Misc.</h3>
+<ul>
+INTJ<br>
+Dec.1<br>
+Bisegsual<br>
+Gets no play<br>
+Foreveralone<br>
+<!-- <li><a href="https://boards.4chan.org/biz/" class="boardlink">Business &amp; Finance</a></li>
+<li><a href="https://boards.4chan.org/trv/" class="boardlink">Travel</a></li>
+<li><a href="https://boards.4chan.org/fit/" class="boardlink">Fitness</a></li>
+<li><a href="https://boards.4chan.org/x/" class="boardlink">Paranormal</a></li>
+<li><a href="https://boards.4chan.org/adv/" class="boardlink">Advice</a></li>
+<li><a href="https://boards.4chan.org/lgbt/" class="boardlink">LGBT</a></li>
+<li><a href="https://boards.4chan.org/mlp/" class="boardlink">Pony</a></li>
+<li><a href="https://boards.4chan.org/news/" class="boardlink">Current News</a></li>
+<li><a href="https://boards.4chan.org/wsr/" class="boardlink">Worksafe Requests</a></li>
+<li><a href="https://boards.4chan.org/vip/" class="boardlink">Very Important Posts</a></li> -->
+</ul>
+<h3 style="text-decoration: underline; display: inline;">Find me</h3> 
+<!-- <h3 style="display: inline;"> -->
+  <!-- <span class="warning" title="Not Safe For Work"><sup style="vertical-align: text-bottom;">(NSFW)</sup></span> -->
+</h3>
+<ul>
+<!-- tba...<br> -->
+<li><a href="https://x.com/yuriositykills" class="boardlink">Twitter</a></li>
+<li><a href="https://www.instagram.com/totallovedomination/" class="boardlink">Instagram</a></li>
+<li><a href="https://open.spotify.com/user/31qxsh7fazndpgknxv3kkndacpty" class="boardlink">Spotify</a></li>
+<li><a href="https://www.tiktok.com/@mod998244353" class="boardlink">Tiktok</a></li>
+<li><a href="https://archiveofourown.org/users/tlqkfqusxodi" class="boardlink">Archiveofourown</a></li>
+<li><a href="https://letterboxd.com/shotacel/" class="boardlink">Letterboxd</a></li>
+<!-- <li><a href="https://boards.4chan.org/b/" class="boardlink">Random</a></li>
+<li><a href="https://boards.4chan.org/r9k/" class="boardlink">ROBOT9001</a></li>
+<li><a href="https://boards.4chan.org/pol/" class="boardlink">Politically Incorrect</a></li>
+<li><a href="https://boards.4chan.org/bant/" class="boardlink">International/Random</a></li>
+<li><a href="https://boards.4chan.org/soc/" class="boardlink">Cams &amp; Meetups</a></li>
+<li><a href="https://boards.4chan.org/s4s/" class="boardlink">Shit 4chan Says</a></li> -->
+</ul>
+</div>
+<div class="column">
+<h3 style="text-decoration: underline; display: inline;">Books</h3>
+<ul>
+Amygdalatropolis<br>
+Catch 22<br>
+The Catcher in the Rye<br>
+The God Boy<br>
+Beside the Sea<br>
+Solaris<br>
+The Anti-Christ<br>
+The Three-Body Problem<br>
+Taxi Driver<br>
+Humankind<br>
+The Human Condition<br>
+Pale Fire<br>
+The Decay of the Angel<br>
+<!-- <li><a href="https://boards.4chan.org/s/" class="boardlink">Sexy Beautiful Women</a></li>
+<li><a href="https://boards.4chan.org/hc/" class="boardlink">Hardcore</a></li>
+<li><a href="https://boards.4chan.org/hm/" class="boardlink">Handsome Men</a></li>
+<li><a href="https://boards.4chan.org/h/" class="boardlink">Hentai</a></li>
+<li><a href="https://boards.4chan.org/e/" class="boardlink">Ecchi</a></li>
+<li><a href="https://boards.4chan.org/u/" class="boardlink">Yuri</a></li>
+<li><a href="https://boards.4chan.org/d/" class="boardlink">Hentai/Alternative</a></li>
+<li><a href="https://boards.4chan.org/y/" class="boardlink">Yaoi</a></li>
+<li><a href="https://boards.4chan.org/t/" class="boardlink">Torrents</a></li>
+<li><a href="https://boards.4chan.org/hr/" class="boardlink">High Resolution</a></li>
+<li><a href="https://boards.4chan.org/gif/" class="boardlink">Adult GIF</a></li>
+<li><a href="https://boards.4chan.org/aco/" class="boardlink">Adult Cartoons</a></li>
+<li><a href="https://boards.4chan.org/r/" class="boardlink">Adult Requests</a></li> -->
+</ul>
+</div>
+<br class="clear-bug">
+    </div>
+  </div>
+</div>
+<div class="box-outer top-box" id="popular-threads">
+  <div class="box-inner">
+    <div class="boxbar">
+      <h2>Popular Threads</h2>
+      <div id="opts-btn" data-cmd="opts">options ▼</div>
+    </div>
+    <div class="boxcontent">
+      <div id="c-threads"><div class="c-thread"><div class="c-board">Mirai Kakehashi</div><img alt="" class="c-thumb" src="./images/image1.jpg" width="150" height="126"></a><div class="c-teaser"><b>Platinum End: </b>The reason you're born into the world is to be happy. That's one of the very first things I can remember my mother saying to me.</div></div>
+
+      <!-- <div id="c-threads"><div class="c-thread"><div class="c-board">Technology</div><a href="https://boards.4chan.org/g/thread/108361612" class="boardlink"><img alt="" class="c-thumb" src="./4chan_files/1773405824691493s.jpg" width="150" height="137"></a><div class="c-teaser"><b>/fglt/ - Friendly GNU/Linux Thread</b>: Users of all levels are welcome to ask questions about GNU/Linux and share experiences.
+*** Please b...</div></div> -->
+    <div class="c-thread"><div class="c-board">Video Games</div><img alt="" class="c-thumb" src="./images/image2.jpg" width="74" height="150"><div class="c-teaser"><b>Awesome sauce: <br> </b>I used to main Roadhog in OW...</div></div>
+    <div class="c-thread"><div class="c-board">Choi Jongsu</div><img alt="" class="c-thumb" src="./images/image4.jpg" width="120" height="150"><div class="c-teaser"><b>Garbage Time: </b>Probably my favorite character of all time <br> (drooling</div></div>
+    <div class="c-thread"><div class="c-board">Phonies</div><img alt="" class="c-thumb" src="./images/image6.jpg" width="150" height="150"><div class="c-teaser"><b>I want to be your friend: </b>I really do. Talk to me about anything. Billions must love!</div></div>
+    <div class="c-thread"><div class="c-board">N Harmonia</div><img alt="" class="c-thumb" src="./images/image3.jpg" width="88" height="150"><div class="c-teaser"><b>Pokémon: </b> 違う意見を否定するのではなく、受け入れることで、世界に化学反応が生まれる。</div></div>
+    <div class="c-thread"><div class="c-board">Moe</div><img alt="" class="c-thumb" src="./images/1772804952906204s.jpg" width="150" height="84"><div class="c-teaser"><b>Note: </b>This site is really poorly maintained :,3 I'll slowly add things in as time passes. The UI recreation took me a long time..!</div></div>
+    <div class="c-thread"><div class="c-board">Double A</div><a href="https://aamath.org/" class="boardlink"><img alt="" class="c-thumb" src="./images/image7.png" width="150" height="150"></a><div class="c-teaser">Come visit my friends</div></div>
+    <div class="c-thread"><div class="c-board">Miharu Rokujou</div><img alt="" class="c-thumb" src="./images/image5.jpg" width="150" height="112"><div class="c-teaser"><b>Nabari no Ou: </b>Absolute nonchalance... yaoi... one of the earliest manga series I read. I still like Yoite and Miharu so much!!! True gem</div></div>
+    </div>    </div>
+  </div>
+</div>
+<div class="yui-g">
+  <div class="yui-u first">
+</div><div class="yui-u">
+    </div>
+  </div>
+</div>
+<div id="ft">
+  <!-- <ul><li class="fill">
+</li><li class="first"><a href="https://www.4chan.org/">Home</a></li>
+<li><a href="https://www.4chan.org/4channews.php">News</a></li>
+<li><a href="http://blog.4chan.org/">Blog</a></li>
+<li><a href="https://www.4chan.org/faq">FAQ</a></li>
+<li><a href="https://www.4chan.org/rules">Rules</a></li>
+<li><a href="https://www.4chan.org/pass">Support 4chan</a></li>
+<li><a href="https://www.4chan.org/advertise">Advertise</a></li>
+<li><a href="https://www.4chan.org/press">Press</a></li>
+<li><a href="https://www.4chan.org/japanese">日本語</a></li>
+</ul> -->
+<br class="clear-bug">
+<div id="copyright">
+    Unofficial personal homepage. Not affiliated with 4chan.<br>Last updated 2026-03-14
+    </div>
+  </div>
+</div>
+
+<!-- <script type="text/javascript" src="./4chan_files/frontpage.min.7.js"></script> -->
+<script type="text/javascript">var Opts = {"fpb":"all","fpc":"ws"};</script>
+<div id="modal-bg"></div>
+
+
+<div id="extension-dpfof"></div></body></html>
